@@ -4,7 +4,7 @@ package golang_reverse_string
 
 // function, which takes a string as
 // argument and return the reverse of string.
-func ReverseString(s string) string {
+func ReverseString(s string, nama string) string {
 	rns := []rune(s) // convert to rune
 	for i, j := 0, len(rns)-1; i < j; i, j = i+1, j-1 {
 
@@ -14,5 +14,5 @@ func ReverseString(s string) string {
 	}
 
 	// return the reversed string.
-	return "Hasilnya = " + string(rns)
+	return "Hasilnya = " + nama + " " + string(rns)
 }
