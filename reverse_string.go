@@ -14,5 +14,5 @@ func ReverseString(s string) string {
 	}
 
 	// return the reversed string.
-	return string(rns)
+	return "Hasilnya = " + string(rns)
 }
